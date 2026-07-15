@@ -1,13 +1,6 @@
 (function(){
   "use strict";
 
-  // NOTA: se as requisições (busca de cidade, geolocalização) não funcionarem,
-  // a causa mais comum é abrir este arquivo direto no navegador (file:///...).
-  // Alguns navegadores bloqueiam fetch() para APIs externas nesse modo.
-  // Solução: sirva a pasta com um servidor local, por exemplo:
-  //   python3 -m http.server 8000        (depois abra http://localhost:8000/weather-dashboard.html)
-  // ou publique em um serviço como Netlify, Vercel ou GitHub Pages.
-
   // ---------- Elementos ----------
   const cityInput = document.getElementById('cityInput');
   const suggestionsBox = document.getElementById('suggestions');
